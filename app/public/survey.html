@@ -10,16 +10,65 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/subpage.css">
 </head>
 <body>
-    <h1>'Survey Page'</h1>
+</br>
     <div class="card">
         <div class="card-body">
             <form>
-                <div class="form-group">
-                    <label for="firstNameInput">First Name</label>
-                    <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
-                    <label for="lastNameInput">Last Name</label>
-                    <input type="text" class="form-control" id="lastNameInput" placeholder="Last Name">
+                <!-- First & Last Name Question -->
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="firstNameInput">First Name</label>
+                            <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lastNameInput">Last Name</label>
+                            <input type="text" class="form-control" id="lastNameInput" placeholder="Last Name">
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Gender Question -->
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-check-label" for="form-check">Gender</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="firstcheck" value="Female">
+                                <label class="form-check-label" for="firstcheck">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="secondcheck" value="Male">
+                                <label class="form-check-label" for="secondcheck">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="thirdcheck" value="Other">
+                                <label class="form-check-label" for="thirdcheck">Other</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Age Question -->
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="ageInput">Age</label>
+                           <input type="number" class="form-control form-control-sm" id="ageInput" placeholder="Age">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hobbies Question -->
+                <div class="form-group">
+                    <label for="hobbyInput">Hobbies</label>
+                    <textarea class="form-control form-control-sm" id="hobbyInput" rows="3" placeholder="What is one hobby you enjoy doing"></textarea>
+                </div>
+                <div class="col-auto my-1 submitbutton">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
             </form>
         </div>
     </div>

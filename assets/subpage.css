@@ -3,3 +3,16 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+div.card {
+    max-width: 80%;
+    margin: auto;
+    opacity: 0.94;
+}
+
+div.ageInputDiv {
+    max-width: 10%;
+    
+}
+div.submitbutton {
+    float: right;
+}
